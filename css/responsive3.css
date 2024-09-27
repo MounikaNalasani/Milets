@@ -1,0 +1,84 @@
+@media (max-width: 1199px) {
+    .millets-ban .milts {
+        text-align: left;
+    }
+
+    .footer .content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991px) {
+    header .navbar-nav {
+        display: none;
+    }
+
+    header .navbar-toggler {
+        display: block;
+    }
+
+    header .navbar-nav.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #f8f8f8;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .millets-box {
+        flex-direction: column;
+    }
+
+    .footer .link-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .box {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .millets-banner,
+    .millets-banner2,
+    .banner6 {
+        padding: 20px 0;
+    }
+
+    .millets-ban,
+    .millets-box,
+    .mill {
+        flex-direction: column;
+    }
+
+    .millets-ban .image img,
+    .millets-box img,
+    .mill img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    header .fluid-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .navbar-brand img {
+        margin-bottom: 10px;
+    }
+
+    .footer .link-boxes {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer .box {
+        margin-right: 0;
+    }
+}

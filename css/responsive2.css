@@ -1,0 +1,134 @@
+@media (max-width: 1919px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-nav.active {
+        display: flex;
+    }
+
+    .serve-box {
+        flex: 1 1 calc(30% - 20px); 
+    }
+
+    footer .box {
+        flex: 1 1 calc(25% - 20px); 
+    }
+}
+@media (max-width: 1200px) {
+    .serve-box {
+        display: column;
+    }
+
+    footer .box {
+        flex: 1 1 calc(33.333% - 20px); 
+    }
+}
+@media (max-width: 991px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav.active {
+        display: flex;
+    }
+
+    .serve-box {
+        flex: 1 1 calc(50% - 20px); 
+    }
+
+    footer .box {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 767px) {
+    .service_area {
+        padding: 10px 0;
+    }
+
+    .serve {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serve-box {
+        flex: 1 1 calc(100% - 20px); 
+        margin: 10px 0;
+    }
+
+    .ss .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn-primary {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    footer .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .box {
+        flex: 1 1 calc(100% - 20px); 
+    }
+}
+@media (max-width: 575px) {
+    .serve-box {
+        margin: 10px 5px;
+        padding: 5px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        position: static;
+        width: 100%;
+    }
+
+    .navbar-nav.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primary {
+        padding: 8px 15px;
+    }
+
+    .logo-details img {
+        width: 80px;
+    }
+
+    footer .link-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .bottom-details {
+        text-align: center;
+    }
+}

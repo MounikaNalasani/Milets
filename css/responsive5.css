@@ -1,0 +1,147 @@
+
+@media (max-width: 1919px) {
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
+@media (max-width: 1200px) {
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav.active {
+        display: flex;
+    }
+
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-toggler {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+
+    .navbar-nav.active {
+        display: flex;
+    }
+
+    .section6 {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .section8 {
+        margin: 10px 0;
+    }
+
+    .contactus-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-form {
+        margin-top: 20px;
+    }
+
+    footer .top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-details img {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    .link-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+/* For screens up to 480px */
+@media (max-width: 480px) {
+    .navbar-brand img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn-primary {
+        padding: 8px 16px;
+    }
+
+    .banner7 img, .card img {
+        height: auto;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
+}
+@media (max-width: 320px) {
+    .navbar-toggler {
+        font-size: 20px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .fluid-container {
+        padding: 5px;
+    }
+
+    .btn-primary {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,140 @@
+/* Media Queries for Responsive Design */
+
+/* Large Devices (1919px and below) */
+@media (max-width: 1919px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-nav.active {
+        display: flex;
+    }
+
+    .box {
+        flex: 1 1 calc(25% - 20px); /* Show 4 boxes per row */
+    }
+
+    .footer .box {
+        flex: 1 1 calc(25% - 20px); /* Footer boxes */
+    }
+}
+
+/* Medium Devices (1200px to 992px) */
+@media (max-width: 1200px) {
+    .box {
+        flex: 1 1 calc(33.333% - 20px); /* Show 3 boxes per row */
+    }
+
+    .footer .box {
+        flex: 1 1 calc(33.333% - 20px); /* Footer boxes */
+    }
+}
+
+/* Medium Devices (991px to 768px) */
+@media (max-width: 991px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-nav.active {
+        display: flex;
+    }
+
+    .box {
+        flex: 1 1 calc(50% - 20px); /* Show 2 boxes per row */
+    }
+
+    .footer .box {
+        flex: 1 1 calc(50% - 20px); /* Footer boxes */
+    }
+}
+
+/* Small Devices (767px to 576px) */
+@media (max-width: 767px) {
+    .categories-container, .millets-container, .services-container {
+        flex-direction: column;
+    }
+
+    .box {
+        flex: 1 1 calc(100% - 20px); /* Show 1 box per row */
+        margin: 10px 0;
+    }
+
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn1 {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    .footer .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .box {
+        flex: 1 1 calc(100% - 20px); /* Footer boxes */
+    }
+}
+
+/* Extra Small Devices (575px to 320px) */
+@media (max-width: 575px) {
+    .box {
+        margin: 10px 5px;
+        padding: 5px;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .navbar-nav {
+        position: static;
+        width: 100%;
+    }
+
+    .navbar-nav.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primary {
+        padding: 8px 15px;
+    }
+
+    .logo-details img {
+        width: 80px;
+    }
+    footer .content .top {
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer .content .link-boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+    footer .bottom-details {
+        text-align: center;
+    }
+}
+
